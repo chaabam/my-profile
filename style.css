@@ -1,0 +1,126 @@
+body {
+	background-color: #EBEBEB;
+	font-family: "calibri"
+}
+
+h1 {
+	color: #1D1128;
+	font-family: "Quicksand";
+	text-align: center;
+}
+
+h2 {
+	color : #edf6f9;
+	letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+	color: black;
+  	text-decoration: none;
+}
+
+span {
+	font-weight: 800;
+	border:1px solid #f28482;
+ 	padding:2px;
+}
+
+.container {
+	/**background-image: url('images/chaton-errant-768x512.jpeg');**/
+	width: 800px;     /* Fix the width first*/
+	margin: 0px auto;
+  	text-align: center;
+  	/**border: 15px solid;
+  	border-image: linear-gradient(#ff6b6b, #b6465f) 10;
+  	padding: 1px 1px 1px 1px;**/
+}
+
+
+.sub-container {
+	border-radius: 4px;
+background-color: #84a59d;
+padding: 10px 10px;
+margin : 10px 10px;
+box-shadow: 2px 2px 3px black;
+
+}
+
+li {
+	list-style-type: none;
+	text-align: left
+}
+
+ul li:before {
+	content: "\A4 \ "; /* caractère ISO 10646 */
+}
+
+
+ol {counter-reset: exp;} /* on initialise et nomme un compteur */
+
+ol li {
+	counter-increment: exp; /* on incrémente le compteur à chaque nouveau li */
+	margin-bottom: 10px;
+}
+
+ol li:before {
+	content: counter(exp); /* on affiche le compteur */
+	padding: 0 20px 6px;
+	margin-right: 8px;
+	vertical-align: top;
+	background: #678;
+	-moz-border-radius: 60px;
+	border-radius: 60px;
+	font-weight: bold;
+	font-size: 0.8em;
+	color: white;		
+}
+
+#img-crop {
+	border-radius: 50%;
+	border-color: red;
+	width: 120px;
+	height: 100px;
+	border : 2px solid #f28482;
+}
+
+#btn-rose {
+	background-color: #f28482;
+	width: 100px;
+	padding: 10px;
+	margin: 10px auto;
+	box-shadow: 0 10px 30px black; 
+}
+
+@media (max-width: 800px ){
+	.container {
+		width : 600px;
+	}
+	h1 {
+		font-size: 150%;
+	}
+}
+
+@media (max-width: 600px ){
+	.container {
+		width : 400px;
+	}
+	h1 {
+		font-size: 120%;
+	}
+}
+
+
+/*
+ul li {
+    list-style-type: square;
+    background-color: #ADADAD;
+  	padding: 1px 1px 1px 1px;/* 
+    background-image: url(image.png); /* on affiche l'image souhaitée 
+    background-repeat: no-repeat; /* on annule la répétition par défaut 
+    background-position: left center; /* on positionne où l'on veut 
+    padding-left: 20px; /* pour éviter la superposition du contenu */
+}
